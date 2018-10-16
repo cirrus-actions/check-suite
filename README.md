@@ -8,4 +8,4 @@ action "Cirrus CI Passes" {
 }
 ```
 
-This will check that a Check Suite for a corresponding Cirrus CI build passed.
+This action will check that a Check Suite for a corresponding Cirrus CI build succeeded. See `.github/main.workflow` for a full demo workflow.
