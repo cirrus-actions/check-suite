@@ -5,7 +5,7 @@ LABEL repository="http://github.com/cirruslabs/actions"
 LABEL homepage="https://github.com/marketplace/cirrus-ci"
 LABEL maintainer="Cirrus Labs"
 LABEL "com.github.actions.name"="Cirrus CI"
-LABEL "com.github.actions.description"="Checks that Cirrus CI Check Run succeded"
+LABEL "com.github.actions.description"="Checks that Cirrus CI Check Suite succeded"
 LABEL "com.github.actions.icon"="check"
 LABEL "com.github.actions.color"="green"
 
