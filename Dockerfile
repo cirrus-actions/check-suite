@@ -11,4 +11,5 @@ LABEL "com.github.actions.color"="green"
 
 RUN apk --no-cache add jq
 
-ENTRYPOINT jq -r ".check_suite.conclusion" "$GITHUB_EVENT_PATH" | grep -Eq "^success$"
+ENTRYPOINT (jq -r ".check_suite.app.name" "$GITHUB_EVENT_PATH" | grep -Eq "^Cirrus CI$") && 
+           (jq -r ".check_suite.conclusion" "$GITHUB_EVENT_PATH" | grep -Eq "^success$")
