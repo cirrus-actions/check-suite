@@ -9,3 +9,5 @@ action "Cirrus CI Passes" {
 ```
 
 This action will check that a Check Suite for a corresponding Cirrus CI build succeeded. See `.github/main.workflow` for a full demo workflow.
+
+**Note:** Actions are **only working on private repositories** at the moment and only for members of [the private beta](https://github.com/features/actions/signup).
