@@ -1,4 +1,6 @@
-# GitHub Actions for [Cirrus CI](https://github.com/marketplace/cirrus-ci) [![Build Status](https://api.cirrus-ci.com/github/cirruslabs/actions.svg)](https://cirrus-ci.com/github/cirruslabs/actions)
+# GitHub Actions for [Cirrus CI](https://github.com/marketplace/cirrus-ci) 
+
+[![Build Status](https://api.cirrus-ci.com/github/cirruslabs/actions.svg)](https://cirrus-ci.com/github/cirruslabs/actions) [![](https://images.microbadger.com/badges/version/cirrusci/actions.svg)](https://microbadger.com/images/cirrusci/actions) [![](https://images.microbadger.com/badges/image/cirrusci/actions.svg)](https://microbadger.com/images/cirrusci/actions)
 
 To use the action simply add the following lines to your `.github/main.workflow`:
 
