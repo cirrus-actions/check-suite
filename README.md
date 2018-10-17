@@ -11,3 +11,20 @@ action "Cirrus CI Passes" {
 This action will check that a Check Suite for a corresponding Cirrus CI build succeeded. See `.github/main.workflow` for a full demo workflow.
 
 **Note:** Actions are **only working on private repositories** at the moment and only for members of [the private beta](https://github.com/features/actions/signup).
+
+### Full `main.workflow` example
+
+![image](https://user-images.githubusercontent.com/989066/47054401-73889380-d166-11e8-8dcb-d72cae4653ca.png)
+
+`.github/main.workflow` content:
+
+```
+workflow "Cirrus CI Demo" {
+  on = "check_suite"
+  resolves = "Cirrus CI Passes"
+}
+
+action "Cirrus CI Passes" {
+  uses = "docker://cirrusci/actions:latest"
+}
+```
