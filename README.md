@@ -1,12 +1,12 @@
 # GitHub Actions for [Cirrus CI](https://github.com/marketplace/cirrus-ci) 
 
-[![Build Status](https://api.cirrus-ci.com/github/cirruslabs/actions.svg)](https://cirrus-ci.com/github/cirruslabs/actions) [![](https://images.microbadger.com/badges/version/cirrusci/actions.svg)](https://microbadger.com/images/cirrusci/actions) [![](https://images.microbadger.com/badges/image/cirrusci/actions.svg)](https://microbadger.com/images/cirrusci/actions)
+[![Build Status](https://api.cirrus-ci.com/github/cirruslabs/actions-trigger.svg)](https://cirrus-ci.com/github/cirruslabs/actions-trigger) [![](https://images.microbadger.com/badges/version/cirrusci/actions-trigger.svg)](https://microbadger.com/images/cirrusci/actions-trigger) [![](https://images.microbadger.com/badges/image/cirrusci/actions-trigger.svg)](https://microbadger.com/images/cirrusci/actions-trigger)
 
 To use the action simply add the following lines to your `.github/main.workflow`:
 
 ```
 action "Cirrus CI Passes" {
-  uses = "docker://cirrusci/actions:latest"
+  uses = "docker://cirrusci/actions-trigger:latest"
 }
 ```
 
@@ -27,6 +27,6 @@ workflow "Cirrus CI Demo" {
 }
 
 action "Cirrus CI Passes" {
-  uses = "docker://cirrusci/actions:latest"
+  uses = "docker://cirrusci/actions-trigger:latest"
 }
 ```
