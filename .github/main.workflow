@@ -4,5 +4,5 @@ workflow "Cirrus CI Demo" {
 }
 
 action "Cirrus CI Passes" {
-  uses = "docker://cirrusci/actions:latest"
+  uses = "docker://cirrusci/actions-trigger:latest"
 }
