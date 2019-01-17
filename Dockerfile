@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 LABEL version="1.0.0"
-LABEL repository="http://github.com/cirruslabs/actions"
+LABEL repository="http://github.com/cirrus-actions/check-suite"
 LABEL homepage="https://github.com/marketplace/cirrus-ci"
 LABEL maintainer="Cirrus Labs"
 LABEL "com.github.actions.name"="Cirrus CI"
