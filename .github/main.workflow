@@ -4,5 +4,8 @@ workflow "Cirrus CI Demo" {
 }
 
 action "Cirrus CI Passes" {
-  uses = "docker://cirrusci/actions-trigger:latest"
+  uses = "docker://cirrusactions/check-suite:latest"
+  env = {
+    APP_NAME = "Cirrus CI"
+  }
 }
