@@ -7,6 +7,9 @@ To use the action simply add the following lines to your `.github/main.workflow`
 ```
 action "Check Suite Passes" {
   uses = "docker://cirrusactions/check-suite:latest"
+  env = {
+    APP_NAME = "Super App"
+  }
 }
 ```
 
@@ -27,5 +30,8 @@ workflow "Cirrus CI Demo" {
 
 action "Cirrus CI Passes" {
   uses = "docker://cirrusactions/check-suite:latest"
+  env = {
+    APP_NAME = "Cirrus CI"
+  }
 }
 ```
