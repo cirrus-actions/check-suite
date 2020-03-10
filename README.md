@@ -1,3 +1,23 @@
+# Deprecated
+
+Since GitHub Actions were rewritten after the original version functionality of this action can be achieved out of the box by creating a workflow like this:
+
+```yaml
+on:
+  check_suite:
+    type: ['completed']
+    
+name: Continue after Cirrus CI Complets Successfully
+jobs:
+  continue:
+    name: After Cirrus CI
+    if: github.event.check_suite.app.name == 'Cirrus CI' &&  github.event.check_suite.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Continue	
+      run: echo "Hello after Cirrus CI Completed"
+ ```
+
 # GitHub Actions for Checks API
 
 [![Build Status](https://api.cirrus-ci.com/github/cirrus-actions/check-suite.svg)](https://cirrus-ci.com/github/cirrus-actions/check-suite) [![](https://images.microbadger.com/badges/version/cirrusactions/check-suite.svg)](https://microbadger.com/images/cirrusactions/check-suite) [![](https://images.microbadger.com/badges/image/cirrusactions/check-suite.svg)](https://microbadger.com/images/cirrusactions/check-suite)
